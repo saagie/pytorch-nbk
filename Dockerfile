@@ -22,7 +22,6 @@ RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-la
 ENV PATH /opt/conda/bin:$PATH
 # This must be done before pip so that requirements.txt is available
 
-RUN pip install numpy torchvision_nightly
 RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cu92/torch_nightly.html
 
 
